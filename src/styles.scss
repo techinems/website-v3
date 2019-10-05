@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~animate.css/animate.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+a {
+    color: #c52d2f;
+    -webkit-transition: color 300ms, background-color 300ms;
+    -moz-transition: color 300ms, background-color 300ms;
+    -o-transition: color 300ms, background-color 300ms;
+    transition: color 300ms, background-color 300ms;
+}
