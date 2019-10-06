@@ -39,6 +39,11 @@
         .nav-link {
           background-color: #c52d2f;
           color: #fff;
+          
+          &.donate {
+            background-position: 100px;
+            color: black;
+          }
         }
       }
     }
