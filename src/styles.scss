@@ -3,9 +3,14 @@
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 a {
-    color: #c52d2f;
-    -webkit-transition: color 300ms, background-color 300ms;
-    -moz-transition: color 300ms, background-color 300ms;
-    -o-transition: color 300ms, background-color 300ms;
-    transition: color 300ms, background-color 300ms;
+  color: #c52d2f;
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition: color 300ms, background-color 300ms;
+  transition: color 300ms, background-color 300ms;
+}
+
+h3 {
+  font-weight: 400;
+  line-height: 24px;
 }

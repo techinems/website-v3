@@ -1,0 +1,18 @@
+<carousel [showIndicators]="true">
+  <slide *ngFor="let s of slides">
+    <div class="py-5 text-white rpia-carousel-item-inner d-flex align-items-end" [ngStyle]="getBgImageStyle(s)">
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-6">
+            <div class="gray-background">
+              <h1 class="animation animated-item-1">{{s.title}}</h1>
+              <h2 class="animation animated-item-2">{{s.desc}}</h2>
+            </div>
+            <a class="btn btn-primary animation animated-item-3" [routerLink]="s.readMoreLink">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="assets/bg1.jpg" alt="first slide" style="display: block; width: 100%;"> -->
+  </slide>
+</carousel>

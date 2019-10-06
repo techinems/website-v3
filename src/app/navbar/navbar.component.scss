@@ -1,15 +1,20 @@
 .bg-rpia-navbar {
-  // border-radius: 0;
-  // margin-bottom: 0;
   background: #151515;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  // padding-bottom: 0;
+
+  @media(min-width: 992px) { // lg and above
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   
   .navbar-nav {
     font-size: 14px;
     
     .nav-item {
+      @media(min-width: 1024px) {
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
+
       +.nav-item {
         margin-left: 5px;
       }
