@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -15,6 +16,13 @@ import { PageContentComponent } from './page-content/page-content.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RpiaAboutComponent } from './pages/rpia-about/rpia-about.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { OfficersComponent } from './pages/officers/officers.component';
+import { AmbulanceAboutComponent } from './pages/ambulance-about/ambulance-about.component';
+import { Fr59AboutComponent } from './pages/fr59-about/fr59-about.component';
+import { MediaComponent } from './pages/media/media.component';
+import { JoinComponent } from './pages/join/join.component';
+import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
+import { CprCertificationComponent } from './pages/cpr-certification/cpr-certification.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +35,18 @@ import { FaqComponent } from './pages/faq/faq.component';
     
     HomeComponent,
     RpiaAboutComponent,
-    FaqComponent
+    FaqComponent,
+    OfficersComponent,
+    AmbulanceAboutComponent,
+    Fr59AboutComponent,
+    MediaComponent,
+    JoinComponent,
+    NewMembersTrainingComponent,
+    CprCertificationComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CarouselModule.forRoot()
   ],

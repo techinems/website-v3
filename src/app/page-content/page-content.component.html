@@ -1,10 +1,14 @@
 <section class="container content-section" *ngIf="content">
   <div class="row">
     <div class="col" *ngFor="let c of content" [ngClass]="getColClasses(c)">
+      <hr *ngIf="c.type === 'divider'">
       <h2 *ngIf="c.type === 'title' && c.header">{{c.header}}</h2>
       <h3 *ngIf="c.type !== 'title' && c.header">{{c.header}}</h3>
       <img *ngIf="c.type === 'img'" [src]="c.img" class="img-fluid mb-4">
-      <div class="lead mb-4" *ngIf="!c.type || c.type === 'text'" [innerHtml]="c.body"></div>
+      <div *ngIf="!c.type || c.type === 'text'" class="lead mb-4" [innerHtml]="c.body"></div>
+      <div *ngIf="c.type === 'embed'" class="embed-responsive embed-responsive-16by9" [ngStyle]="embedStyles(c)">
+        <iframe [src]="safeEmbedUrl(c)" width="100%" [ngStyle]="embedStyles(c)" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 </section>
