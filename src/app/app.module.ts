@@ -23,6 +23,8 @@ import { MediaComponent } from './pages/media/media.component';
 import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
 import { CprCertificationComponent } from './pages/cpr-certification/cpr-certification.component';
+import { ServiceListComponent } from './pages/request-coverage/services-list.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { CprCertificationComponent } from './pages/cpr-certification/cpr-certifi
     CarouselComponent,
     FooterComponent,
     PageContentComponent,
-    
+
     HomeComponent,
     RpiaAboutComponent,
     FaqComponent,
@@ -42,7 +44,9 @@ import { CprCertificationComponent } from './pages/cpr-certification/cpr-certifi
     MediaComponent,
     JoinComponent,
     NewMembersTrainingComponent,
-    CprCertificationComponent
+    CprCertificationComponent,
+    //ContactUsComponent,
+    ServiceListComponent
   ],
   imports: [
     BrowserModule,

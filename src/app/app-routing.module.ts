@@ -9,6 +9,8 @@ import { Fr59AboutComponent } from './pages/fr59-about/fr59-about.component';
 import { MediaComponent } from './pages/media/media.component';
 import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
+import { ServiceListComponent } from './pages/request-coverage/services-list.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'media', component: MediaComponent },
   { path: 'join', component: JoinComponent },
   { path: 'new-members-training', component: NewMembersTrainingComponent },
-  
+  { path: 'request-coverage', component: ServiceListComponent},
+  //{ path: 'contact-us', component: ContactUsComponent},
+
   // redirects:
   { path: '5939-about', redirectTo: '/ambulance-about', pathMatch: 'full' }
 ];

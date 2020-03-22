@@ -1,54 +1,52 @@
 .bg-rpia-navbar {
-  background: #151515;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6)
+  ),
+  url('../../assets/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media(min-width: 992px) { // lg and above
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-right: 100px;
   }
-  
+
   .navbar-nav {
-    font-size: 14px;
-    
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+
     .nav-item {
       @media(min-width: 1024px) {
-        padding-top: 28px;
-        padding-bottom: 28px;
+        padding: 10px 5px 0px;
+        line-height: 120px;
       }
 
       +.nav-item {
-        margin-left: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
-      
+
       .nav-link {
-        padding: 5px 17px;
+        padding: 5px 10px;
         margin: 0;
         border-radius: 3px;
         color: #fff;
         line-height: 24px;
         display: inline-block;
-        
-        &.donate {
-          background: linear-gradient(to bottom, #efcc5a 0%, #846916 100%);
-          background-size: 1px 50px;
-          color: black;
-          transition: background 300ms;
-        }
       }
-      
+
       &.active, &:hover, &:focus {
         .nav-link {
           background-color: #c52d2f;
           color: #fff;
-          
-          &.donate {
-            background-position: 100px;
-            color: black;
-          }
+
         }
       }
     }
   }
-  
+
   .dropdown {
     .dropdown-menu {
       background-color: rgba(0, 0, 0, .85);
@@ -61,7 +59,7 @@
       border-top: 0;
       border-radius: 0;
       left: 0;
-      
+
       .dropdown-item {
         display: block;
         padding: 3px 20px;
@@ -72,13 +70,13 @@
         white-space: nowrap;
         padding: 8px 15px;
         color: #fff;
-        
+
         &.active, &:hover, &:focus {
           background-color: #c52d2f;
           color: #fff;
         }
       }
-      
+
       .dropdown-divider {
         height: 1px;
         overflow: hidden;
@@ -86,7 +84,7 @@
         border-top: 1px solid rgba(150, 150, 150, .25);
       }
     }
-    
+
     &:hover {
       .dropdown-menu {
         display: block;
