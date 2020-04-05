@@ -45,7 +45,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     JoinComponent,
     NewMembersTrainingComponent,
     CprCertificationComponent,
-    //ContactUsComponent,
+    ContactUsComponent,
     ServiceListComponent
   ],
   imports: [

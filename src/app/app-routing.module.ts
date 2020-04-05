@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'join', component: JoinComponent },
   { path: 'new-members-training', component: NewMembersTrainingComponent },
   { path: 'request-coverage', component: ServiceListComponent},
-  //{ path: 'contact-us', component: ContactUsComponent},
+  { path: 'contact-us', component: ContactUsComponent},
 
   // redirects:
   { path: '5939-about', redirectTo: '/ambulance-about', pathMatch: 'full' }
