@@ -8,15 +8,24 @@ import { services } from './services';
 })
 export class ServiceListComponent {
   services = services;
-
-  // TODO: A pop up page
+  
   selectT1() {
-    window.alert('The service form will be on for next week!');
+    var modal = document.getElementById("popup");
+    modal.style.display = "block";
   }
+
   selectT2() {
-    window.alert('The service form will be on for next week!');
+    var modal = document.getElementById("popup");
+    modal.style.display = "block";
   }
+
   selectT3() {
-    window.alert('The service form will be on for next week!');
+    var modal = document.getElementById("popup");
+    modal.style.display = "block";
+  }
+
+  close() {
+    var modal = document.getElementById("popup");
+    modal.style.display = "none";
   }
 }

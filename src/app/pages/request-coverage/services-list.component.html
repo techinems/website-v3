@@ -78,3 +78,109 @@
 </body>
 
 </html>
+
+
+
+<div id="popup" class="modal">
+  <div class="modal-content">
+    <button class="close" (click)="close()">&times;</button>
+    <!-- Modal content -->
+    <form role="form" ng-submit="submitForm()" novalidate>
+      <h4 class="text-center">Tell us about yourself...</h4>
+      <div class="form-group">
+        <label for="orgName">Organization Name</label>
+        <input type="text" class="form-control" id="orgName" placeholder="Who are we doing this for?"
+          ng-model="formData.orgName" />
+      </div>
+      <div class="form-group">
+        <label for="name">Contact Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Who do we get in touch with?"
+          ng-model="formData.name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Contact Email</label>
+        <input type="type" class="form-control" id="email" placeholder="How do we reach you?"
+          ng-model="formData.email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Contact Phone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="(555) 555-5555" ng-model="formData.phone" />
+      </div>
+      <div class="form-group">
+        <label for="name">Secondary Contact Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Who do we get in touch with?"
+          ng-model="formData.name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Secondary Contact Email</label>
+        <input type="type" class="form-control" id="email" placeholder="How do we reach you?"
+          ng-model="formData.email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Secondary Contact Phone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="(555) 555-5555" ng-model="formData.phone" />
+      </div>
+      <h4 class="text-center">Tell us about the event...</h4>
+      <div class="form-group">
+        <label for="eventName">Event Name</label>
+        <input type="text" class="form-control" id="eventName" placeholder="What are we covering?"
+          ng-model="formData.eventName" />
+      </div>
+      <div class="form-group">
+        <label for="loc">Event Location</label>
+        <input type="text" class="form-control" id="loc" placeholder="Where do you want us? Building Name or Address"
+          ng-model="formData.loc" />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="date" placeholder="MM/DD/YYYY" ng-model="formData.date" />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Arrival Time</label>
+        <input type="time" class="form-control" id="time" placeholder="HH:MM AM/PM -- When do you need us there?"
+          ng-model="formData.time" />
+      </div>
+      <div class="form-group">
+        <label for="type">Event Type</label>
+        <select id="type" ng-model="formData.type">
+          <option value="Sporting Event">Sporting Event/Game</option>
+          <option value="Sports Practice">Sports Practice</option>
+          <option value="Hackathon">Hackathon</option>
+          <option value="After Dark">"After Dark" Event</option>
+          <option value="Run">Run/Marathon</option>
+          <option value="Other Outdoor Event">Other Outdoor Event</option>
+          <option value="Other Indoor Event">Other Indoor Event</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="attendance">Expected Attendance</label>
+        <input type="number" min="0" class="form-control" id="attendance" placeholder="{{getAttendanceLims()}}"
+          ng-model="formData.attendance" />
+      </div>
+      <div class="form-group">
+        <label for="duration">Expected Duration</label>
+        <input type="number" min="0" class="form-control" id="duration" placeholder="Hours"
+          ng-model="formData.duration" />
+      </div>
+      <div class="form-group">
+        <label for="eventInfo">More Information</label>
+        <input type="text" class="form-control" id="eventInfo" placeholder="Anything else you want to let us know?"
+          ng-model="formData.eventInfo" />
+      </div>
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="6LdHKxUTAAAAAGTBpgYEJZDoAz1uGqG_tX_gQb1K"></div>
+      </div>
+      <hr />
+      <div class="btn-toolbar pull-right">
+        <button type="reset" ng-click="clearForm()" class="btn btn-warning">Clear Form</button>
+        <button type="submit" ng-click="toggleModal('')" class="btn btn-success">Submit</button>
+      </div>
+      <div class="clearfix"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+
+</script>
