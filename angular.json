@@ -97,7 +97,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/instafeed.js/dist/instafeed.min.js"
+            ]
           }
         },
         "lint": {
