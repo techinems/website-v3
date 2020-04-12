@@ -98,7 +98,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./src/assets/instafeed.js/dist/instafeed.min.js"
+              "src/assets/instafeed.js/dist/instafeed.min.js"
             ]
           }
         },

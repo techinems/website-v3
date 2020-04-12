@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.9",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.3.1",
+    "instafeed.js": "github:stevenschobert/instafeed.js",
     "jquery": "^3.4.1",
     "ngx-bootstrap": "^5.1.2",
     "popper.js": "^1.15.0",
