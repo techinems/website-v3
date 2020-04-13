@@ -31,7 +31,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/instafeed.js/src/instafeed.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -98,7 +100,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/instafeed.js/dist/instafeed.min.js"
+              "./node_modules/instafeed.js/src/instafeed.js"
             ]
           }
         },
