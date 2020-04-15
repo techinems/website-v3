@@ -173,16 +173,25 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
 }
 
 .instagram-content {
-    background-image: url('../../../assets/grey_bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 80px 50px 100px;
+  white-space: nowrap;
+  background-image: url('../../../assets/grey_bg.jpg');
+  //width: 1920px;
+  //height: 1200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 50px 100px;
+  overflow: auto;
+}
+
+
+
   .top {
     position: absolute;
     top: 0;
     height: 100px;
     width: 100%;
+
   }
   .bottom {
     position: absolute;
@@ -195,5 +204,11 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
     top: 100px;
     bottom: 100px;
     width: 100%;
+
   }
-}
+
+
+
+
+
+
